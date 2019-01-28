@@ -13,7 +13,7 @@ export const logout = () => ({
 
 export const login = (accout, password) => {
 	return (dispatch) => {
-		axios.get('http://amenzai.vastsum.net/api/jianshu/login?account=' + accout + '&password=' + password).then((res) => {
+		axios.get('http://eru.vastsum.net/api/jianshu/login?account=' + accout + '&password=' + password).then((res) => {
 			const result = res.data.data;
 			if (result) {
 				dispatch(changeLogin())

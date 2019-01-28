@@ -9,7 +9,7 @@ const changeDetail = (title, content) => ({
 
 export const getDetail = (id) => {
 	return (dispatch) => {
-		axios.get('http://amenzai.vastsum.net/api/jianshu/detail?id=' + id).then((res) => {
+		axios.get('http://eru.vastsum.net/api/jianshu/detail?id=' + id).then((res) => {
 			const result = res.data.data;
 			dispatch(changeDetail(result.title, result.content));
 		}).catch(() => {

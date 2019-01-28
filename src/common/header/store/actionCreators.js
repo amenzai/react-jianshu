@@ -31,7 +31,7 @@ export const changePage = (page) => ({
 
 export const getList = () => {
 	return (dispatch) => {
-		axios.get('http://amenzai.vastsum.net/api/jianshu/header').then((res) => {
+		axios.get('http://eru.vastsum.net/api/jianshu/header').then((res) => {
 			const data = res.data;
 			dispatch(changeList(data.data));
 		}).catch(() => {
